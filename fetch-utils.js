@@ -16,7 +16,6 @@ export async function createTodo(todo) {
     //     .insert([
     //         { some_column: 'someValue', other_column: 'otherValue' },
     //     ]);
-    // console.log(response);
     // once you have a response from supabase, comment this back in:
     return checkError(response);
 }

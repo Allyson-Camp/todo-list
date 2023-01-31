@@ -38,7 +38,7 @@ async function displayTodos() {
     // fetch the user's todos from supabase
     const todos = await getTodos();
     todoArray = todos;
-    // console.log(todoArray);
+    
     // loop through the user's todos
     for (let todo of todoArray) {
         const todosAdded = renderTodo(todo);
@@ -72,6 +72,6 @@ deleteButton.addEventListener('click', async () => {
     // delete all todos
     // then refetch and display the updated list of todos
     displayTodos();
-    deleteAllTodos();
-    // console.log('clicking')
+    await deleteAllTodos();
+    
 });
